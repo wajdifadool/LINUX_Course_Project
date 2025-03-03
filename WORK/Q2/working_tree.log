@@ -1,5 +1,6 @@
 .
 ├── BACKUP
+│   ├── diagrams_backup_2025-03-03_21-35-31.tar.gz
 │   └── diagrams_backup_20250303_210556.tar.gz
 ├── CODE
 │   ├── plant.py
@@ -22,23 +23,28 @@
 │       ├── plants.csv
 │       └── py1.py
 ├── README.md
-├── WORK
-│   ├── Q1
-│   │   ├── git_commits.log
-│   │   ├── linux_history.log
-│   │   ├── q1_output.txt
-│   │   └── working_tree.log
-│   ├── Q2
-│   │   ├── 1_Diagrams
-│   │   │   ├── Rose_histogram.png
-│   │   │   ├── Rose_line_plot.png
-│   │   │   └── Rose_scatter.png
-│   │   ├── linux_history.log
-│   │   ├── plant.py
-│   │   └── working_tree.log
-│   ├── Q3
-│   ├── Q4
-│   └── Q5
-└── temp_history.log
+└── WORK
+    ├── Q1
+    │   ├── git_commits.log
+    │   ├── linux_history.log
+    │   ├── q1_output.txt
+    │   └── working_tree.log
+    ├── Q2
+    │   ├── 1_Diagrams
+    │   │   ├── Rose_histogram.png
+    │   │   ├── Rose_line_plot.png
+    │   │   └── Rose_scatter.png
+    │   ├── 2_Diagrams
+    │   │   ├── Rose_histogram.png
+    │   │   ├── Rose_line_plot.png
+    │   │   └── Rose_scatter.png
+    │   ├── linux_history.log
+    │   ├── plant.py
+    │   ├── plant_v2.py
+    │   ├── requirements.txt
+    │   └── working_tree.log
+    ├── Q3
+    ├── Q4
+    └── Q5
 
-13 directories, 29 files
+14 directories, 34 files
