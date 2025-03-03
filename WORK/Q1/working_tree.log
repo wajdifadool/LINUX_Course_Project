@@ -1,0 +1,34 @@
+.
+├── BACKUP
+├── CODE
+│   ├── plant.py
+│   └── py1.py
+├── DATA
+│   ├── FIle_1.txt
+│   ├── File_2.txt
+│   ├── img1.jpg
+│   ├── img2.jpg
+│   ├── img3.jpg
+│   └── plants.csv
+├── DOWNLOADS
+│   └── LINUX_COURSE_WORK-downloads
+│       ├── FIle_1.txt
+│       ├── File_2.txt
+│       ├── img1.jpg
+│       ├── img2.jpg
+│       ├── img3.jpg
+│       ├── plant.py
+│       ├── plants.csv
+│       └── py1.py
+├── README.md
+└── WORK
+    ├── Q1
+    │   ├── linux_history.log
+    │   ├── q1_output.txt
+    │   └── working_tree.log
+    ├── Q2
+    ├── Q3
+    ├── Q4
+    └── Q5
+
+12 directories, 20 files

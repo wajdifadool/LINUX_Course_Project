@@ -1,0 +1,16 @@
+   11  git bracnh
+   12  git branch
+   13  git remote add origin https://github.com/wajdifadool/LINUX_Course_Project.git
+   14  git push -u origin main
+   15  git push -u origin main
+   16  git push -u origin master
+   17  curl -L -o downloads.tar.gz "https://github.com/Telhai-Git/LINUX_COURSE_WORK/archive/refs/tags/downloads.tar.gz"
+   18  tar -xzf downloads.tar.gz -C DOWNLOADS
+   19  rm downloads.tar.gz
+   20  git add .
+   21  git commit -m "second commit - setup repository and extracted downloads"\n
+   22  git branch BR_Q1\n
+   23  git checkout BR_Q1\n
+   24  cp DOWNLOADS/LINUX_COURSE_WORK-downloads/*.py CODE/\n
+   25  cp DOWNLOADS/LINUX_COURSE_WORK-downloads/*.{csv,jpg,txt} DATA/\n
+   26  \n{\n  echo "Time : $(date)"\n  echo "USER DETAILS: $(grep $(whoami) /etc/passwd)"\n  echo "REPO: $(pwd)"\n  echo "GithubUrl: https://github.com/wajdifadool/LINUX_Course_Project"\n  echo "VERSIONID: $(sw_vers -productVersion)"\n  echo "------------------------------------------------------------------------------------"\n  tree .\n  echo "------------"\n  echo "List of all my .sh files under Cuurent folder recursively"\n  find . -maxdepth 1 -type f -name "*.sh"\n} > WORK/Q1/q1_output.txt\n

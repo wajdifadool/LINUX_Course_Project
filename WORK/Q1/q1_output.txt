@@ -1,0 +1,40 @@
+Time : Mon Mar  3 20:24:05 IST 2025
+USER DETAILS: 
+REPO: /Users/wajdi/LINUX_Course_Project
+GithubUrl: https://github.com/wajdifadool/LINUX_Course_Project
+VERSIONID: 10.15.7
+------------------------------------------------------------------------------------
+.
+├── BACKUP
+├── CODE
+│   ├── plant.py
+│   └── py1.py
+├── DATA
+│   ├── FIle_1.txt
+│   ├── File_2.txt
+│   ├── img1.jpg
+│   ├── img2.jpg
+│   ├── img3.jpg
+│   └── plants.csv
+├── DOWNLOADS
+│   └── LINUX_COURSE_WORK-downloads
+│       ├── FIle_1.txt
+│       ├── File_2.txt
+│       ├── img1.jpg
+│       ├── img2.jpg
+│       ├── img3.jpg
+│       ├── plant.py
+│       ├── plants.csv
+│       └── py1.py
+├── README.md
+└── WORK
+    ├── Q1
+    │   └── q1_output.txt
+    ├── Q2
+    ├── Q3
+    ├── Q4
+    └── Q5
+
+12 directories, 18 files
+------------
+List of all my .sh files under Cuurent folder recursively
