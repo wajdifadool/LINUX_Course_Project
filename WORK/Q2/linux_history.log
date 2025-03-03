@@ -1,0 +1,16 @@
+    1  export HISTSIZE=10000
+    2  git branch BR_Q2
+    3  git checkout BR_Q2
+    4  cp CODE/plant.py WORK/Q2 
+    5  ls
+    6  ls CODE
+    7  python3 WORK/Q2/plant.py\n
+    8  git branch
+    9  mkdir -p WORK/Q2/1_Diagrams\n
+   10  mv *.png WORK/Q2/1_Diagrams \n
+   11  history >> temp_history.log
+   12  cat temp_history.log
+   13  timestamp=$(date +"%Y%m%d_%H%M%S")\n
+   14  tar -czf BACKUP/diagrams_backup_$timestamp.tar.gz -C WORK/Q2/1_Diagrams .\n
+   15  history > temp_history.log
+   16  cat temp_history.log
