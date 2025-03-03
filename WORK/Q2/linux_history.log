@@ -1,16 +1,16 @@
-    1  export HISTSIZE=10000
-    2  git branch BR_Q2
-    3  git checkout BR_Q2
-    4  cp CODE/plant.py WORK/Q2 
-    5  ls
-    6  ls CODE
-    7  python3 WORK/Q2/plant.py\n
-    8  git branch
-    9  mkdir -p WORK/Q2/1_Diagrams\n
-   10  mv *.png WORK/Q2/1_Diagrams \n
-   11  history >> temp_history.log
-   12  cat temp_history.log
-   13  timestamp=$(date +"%Y%m%d_%H%M%S")\n
-   14  tar -czf BACKUP/diagrams_backup_$timestamp.tar.gz -C WORK/Q2/1_Diagrams .\n
-   15  history > temp_history.log
-   16  cat temp_history.log
+    6  echo argparse >> WORK/Q2/requirements.txt 
+    7  code WORK/Q2/requirements.txt
+    8  pip install -r WORK/Q2/requirements.txt\n
+    9  cp WORK/Q2/plant.py WORK/Q2/plant_v2.py
+   10  code WORK/Q2/plant_v2.py
+   11  python3 plant_plots.py --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0 
+   12  python3 WORK/Q2/plant_v2.py --plant "Rose" --height 50 55 60 65 70 --leaf_count 35 40 45 50 55 --dry_weight 2.0 2.2 2.5 2.7 3.0 
+   13  ls
+   14  mkdir -p WORK/Q2/2_Diagrams
+   15  mv *.png WORK/Q2/2_Diagrams \n
+   16  ls WORK/Q2/2_Diagrams 
+   17  ls WORK/Q2/
+   18  timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
+   19  tar -czf BACKUP/diagrams_backup_$timestamp.tar.gz -C WORK/Q2/2_Diagrams .
+   20  ls BACKUP
+   21  history
