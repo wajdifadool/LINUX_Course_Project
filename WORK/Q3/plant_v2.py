@@ -1,11 +1,16 @@
+# python3 plant_v2.py 
+# --plant <plant_name>
+#  --height "$height" --leaf_count "$leaf_count" --dry_weight "$dry_weight"
 import argparse
 import matplotlib.pyplot as plt
 import os
 
+print("----------------------python running ----------------------")
+
 # Argument parser setup
 parser = argparse.ArgumentParser(description="Generate plant growth diagrams from input data.")
 parser.add_argument("--plant", type=str, required=True, help="Name of the plant")
-parser.add_argument("--height", type=float, nargs="+", required=True, help="Height data over time (cm)")
+parser.add_argument("--height", type=int, nargs="+", required=True, help="Height data over time (cm)")
 parser.add_argument("--leaf_count", type=int, nargs="+", required=True, help="Leaf count data over time")
 parser.add_argument("--dry_weight", type=float, nargs="+", required=True, help="Dry weight data over time (g)")
 args = parser.parse_args()
