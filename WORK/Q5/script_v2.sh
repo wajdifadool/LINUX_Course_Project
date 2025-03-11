@@ -36,8 +36,7 @@ NC='\033[0m' # No Color
 csv_file=""
 output_dir=""       #  default is empty string 
 skip_venv=false
-dry_run=false
-verbose=false
+
 log_file="script_log.txt"
 
 if [[ "$#" -eq 0 || $(($# % 2)) -ne 0  ]]; then 
@@ -51,6 +50,7 @@ while [[ "$#" -gt 0 ]]; do
     case $1 in
         -f|--file) csv_file="$2"; shift ;;  
         -o|--output) output_dir="$2"; shift ;;  
+        -b|--backup) backup="$2"; shift ;;  
         
         # --sv|--skip-venv) skip_venv=true ;;  
         *) echo "Unknown option: $1" | tee -a "$log_file"; exit 1 ;;  
@@ -75,8 +75,15 @@ if [[ ! -n $output_dir ]]; then
     # create the output dir in the current folder
     output_dir="Diagrams"
 fi
-
 echo "$timestamp Output Dir $output_dir" | tee -a $LOG_FILE
+
+# should create backup tar file ? false by default
+if [[ ! -n $backup ]]; then 
+    # create the output dir in the current folder
+    backup="false"
+fi
+echo "aaaaaaaaaaaaaaaaaaaaaaaaaaa"
+echo "$timestamp Backup= $backup" | tee -a $LOG_FILE
 
 #            _        _   
 #  ___  __ _| |_ _ __| |_ 
@@ -181,3 +188,38 @@ tree . -I "venv" | tee -a $LOG_FILE
 # echo Removing file 
 
 
+#        ____  
+# __   _|___ \ 
+# \ \ / / __) |
+#  \ V / / __/ 
+#   \_/ |_____|
+             
+
+# implementing backup abillity 
+if [[ $backup == "true" ]]; then    
+    echo "$timestamp Creating backup file " | tee -a $LOG_FILE
+    tar -czf ../../BACKUP/diagrams_backup_$timestamp.tar.gz $output_dir
+    echo "$timestamp Created backup tar: diagrams_backup_$timestamp.tar.gz file " | tee -a $LOG_FILE
+fi
+
+: '
+--------------------------------------
+----- not included in the script -----
+--------------------------------------
+# adding all work to current branch
+git add .
+git commit -m "Completed Q5 bash script"
+git checkout master
+git merge BR_Q5
+
+git log --oneline | tee git_commits.log
+# adding 
+git add git_commits.log
+git commit -m "adding git_commits.log"
+
+ 
+git push origin master
+
+--------------------------------------
+--------------------------------------
+'
