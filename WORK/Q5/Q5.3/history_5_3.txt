@@ -1,0 +1,293 @@
+    1  wget -O jquery-3.6.0.min.js https://code.jquery.com/jquery-3.6.0.min.js
+    2  wget -O pic1.jpeg https://picsum.photos/200/300?grayscale
+    3  wget -O pic2.jpeg https://picsum.photos/200/300?grayscale
+    4  wget -O pic3.jpeg https://picsum.photos/200/300?grayscale
+    5  wget -O posts.json https://jsonplaceholder.typicode.com/posts
+    6  tar -czvf task3.tar.gz jquery-3.6.0.min.js pic1.jpeg pic2.jpeg pic3.jpeg posts.json
+    7  rm jquery-3.6.0.min.js pic1.jpeg pic2.jpeg pic3.jpeg posts.json
+    8  mkdir -p temp_previous
+    9  tar -xvf task2.tar.gz -C temp_previous
+   10  linux
+   11  sudo apt install fortune 
+   12  sudo yum install fortune
+   13  sudo pacman -S fortune
+   14  sudo apt update
+   15  sudo apt install fortune
+   16  fortune
+   17  sudo apt install cowsay
+   18  cowsay "Hello, Linux!"
+   19  fortune | cowsay
+   20  touch installs.log
+   21  echo "---about Installing htop... $(date)" >> installs.log
+   22  echo "---updating Repo..." >> installs.log
+   23  sudo apt update >> installs.log 2>&1   # Use for Debian/Ubuntu-based systems
+   24  echo "---htop installing details:" >> installs.log
+   25  apt show htop >> installs.log 2>&1    # Use `yum info htop` for RHEL/CentOS
+   26  sudo apt install -y htop >> installs.log 2>&1
+   27  echo "htop installed directory: $(which htop)" >> installs.log
+   28  echo "---Running htop... $(date)" >> installs.log
+   29  htop
+   30  sudo apt install -y aha
+   31  htop | aha > htop.html
+   32  wget -O pic1.jpeg https://miro.medium.com/v2/resize:fit:1100/format:webp/1*eV6MmAeMV9DgkQv3PdOBMA.png
+   33  wget -O pic2.jpg https://cyberhoot.com/wp-content/uploads/2020/11/2-1024x565.jpg
+   34  wget -O pic3.jpg https://blog.vtutor.com/wp-content/uploads/2019/12/Linux.jpg
+   35  wget https://jsonplaceholder.typicode.com/posts
+   36  wget -P Downloads https://jsonplaceholder.typicode.com/posts -O Downloads/posts.json
+   37  wget -P Downloads https://jsonplaceholder.typicode.com/posts -O Downloads/posts.json\
+   38  wget -P Downloads https://jsonplaceholder.typicode.com/posts -O Downloads/posts.json
+   39  wget -O Downloads/posts.json https://jsonplaceholder.typicode.com/posts
+   40  cd Downloads
+   41  wget -O posts.json https://jsonplaceholder.typicode.com/posts
+   42  tar czvf downloadedFiles.tar.gz *
+   43  rm pic*
+   44  rm *json
+   45  rm *js
+   46  tar xzvf downloadedFiles.tar.gz
+   47  curl http://example.com > example_com.html
+   48  mv downloadedFiles.tar.gz downloadedFiles.tar.gz_$(date +%Y-%m-%d)
+   49  history 19 >> task3.log
+   50  wget https://code.jquery.com/jquery-3.7.1.slim.js 
+   51  mkdir DownloadFiles
+   52  cd DownloadFiles
+   53  code .
+   54  find /path/to/search -type f \( -name "installs.log" -o -name "htop.html" \)
+   55  find . -type f \( -name "installs.log" -o -name "htop.html" \)
+   56  mkdir nodejs-server
+   57  cd nodejs-server
+   58  code .
+   59  npm init -y
+   60  npm install express
+   61  node server.js
+   62  sudo apt install nodejs
+   63  node server.js
+   64  node server.js
+   65  lsof -i :5000
+   66  kill -9 <54510>
+   67  kill -9 54510
+   68  curl http://localhost:5000 -w "\nTime: $(date)\n" >> server_responses.txt
+   69  cat server_responses.txt
+   70  node server.js
+   71  node server.js
+   72  lsof -i :5000
+   73  kill -9 56647
+   74  clear
+   75  node server.js
+   76  curl http://localhost:5000 -w "\nTime: $(date)\n" >> server_responses.txt
+   77  cat server_responses.txt
+   78  curl http://localhost:5000 -w "\nTime: $(date)\n" >> server_responses.txt
+   79  cat server_responses.txt
+   80  node server.js
+   81  lsof -i :5000
+   82  kill -9 <19949>
+   83  kill -9 19949
+   84  node server.js
+   85  lsof -i :5000
+   86  node server.js
+   87  mkdir HW02
+   88  cd HW02
+   89  code .
+   90  nano combine.sh
+   91  mkdir ~/TestFiles
+   92  cd ~/TestFiles
+   93  echo "This is file1.txt" > file1.txt
+   94  echo "This is file2.txt" > file2.txt
+   95  echo "This is file1.log" > file1.log
+   96  echo "This is file2.log" > file2.log
+   97  ls -l
+   98  cd /mnt/c/Users/Asus/HW02
+   99  ./combine.sh ~/TestFiles combined_output.txt
+  100  nano updater.sh
+  101  cd ~/TestFiles
+  102  echo Version 1.01 of this file is important. 1.01 appears twice. > testfile.txt
+  103  ./updater.sh ~/testfile.txt "1.01" "2.01"
+  104  cd /mnt/c/Users/Asus/HW02
+  105  ./updater.sh ~/testfile.txt "1.01" "2.01"
+  106  ./updater.sh ~/TestFiles/testfile.txt "1.01" "2.01"
+  107  cat /home/matanyak/TestFiles/testfile_1.01.txt
+  108  cat /home/matanyak/TestFiles/testfile_2.01.txt
+  109  nano updater_v2.sh
+  110  ./updater_v2.sh ~/TestFiles/testfile.txt "1.01" "2.01" "12/05/22" "15/03/23"
+  111  cat ~/TestFiles/testfile.txt
+  112  ./updater_v2.sh ~/TestFiles/testfile.txt "1.01" "2.01" "12/05/22" "15/03/23"
+  113  mkdir -p ~/TestFiles
+  114  cd ~/TestFiles
+  115  echo "Version 1.01 of this file is important. 1.01 appears twice. Date: 12/05/22." > testfile.txt
+  116  ls -l
+  117  cat testfile.txt
+  118  cd /mnt/c/Users/Asus/HW02
+  119  ./updater_v2.sh ~/TestFiles/testfile_101.txt ".01" "2.01" "12/05/22" "15/03/23"
+  120  cat ~/TestFiles/testfile_1.01.txt
+  121  cat ~/TestFiles/testfile_2.01.txt
+  122  ls ~/TestFiles/testfile.txt
+  123  diff ~/TestFiles/testfile_1.01.txt ~/TestFiles/testfile_2.01.txt
+  124  1c1
+  125  < Version 1.01 of this file is important. 1.01 appears twice. Date: 12/05/22.
+  126  ---
+  127  clear
+  128  mkdir -p ~/TestFiles
+  129  echo "Hello 123! Today is 01/01/2022. Replace 123 with ABC and 01/01/2022 with 31/12/2023." > ~/TestFiles/testfile_v2.txt
+  130  cat ~/TestFiles/testfile_v2.txt
+  131  ./updater.sh ~/TestFiles/testfile_v2.txt "123" "ABC" "01/01/2022" "31/12/2023" "Hello" "Hi"
+  132  ./updater_v2.sh ~/TestFiles/testfile_v2.txt "123" "ABC" "01/01/2022" "31/12/2023" "Hello" "Hi"
+  133  cat ~/TestFiles/testfile_v2_123.txt
+  134  cat ~/TestFiles/testfile_v2_ABC.txt
+  135  nano script2
+  136  mv script2 script2.sh
+  137  touch fileTest
+  138  ./script2 fileTest
+  139  ./script2.sh fileTest
+  140  cat fileTest
+  141  ./script2.sh fileTest
+  142  cat fileTest
+  143  ./script2.sh Test
+  144  nano install.sh
+  145  nano installPackage
+  146  mv installPackage installPackage.sh
+  147  ./install_packages.sh curl git
+  148  ./installPackage.sh curl git
+  149  dpkg -l | grep curl
+  150  dpkg -l | grep git
+  151  nano folderChangeName
+  152  ls
+  153  ./folderChangeName ~/HW02
+  154  cd ~/HW02
+  155  cd /mnt/c/Users/Asus/HW02
+  156  ls
+  157  ./folderChangeName HW02
+  158  cd /mnt/c/Users/Asus/HW03
+  159  cd Test
+  160  touch file1.txt file2.txt file3.txt
+  161  ./folderChangeName HW02
+  162  ./folderChangeName Test
+  163  ./folderChangeName.sh Test
+  164  cd ..
+  165  ./folderChangeName.sh Test
+  166  ls
+  167  ls -l
+  168  mv folderChangeName folderChangeName.sh
+  169  ./folderChangeName.sh Test
+  170  nano CSV
+  171  mv CSV CVS.sh
+  172  ./CSV.sh Test
+  173  ./CVS.sh Test
+  174  cd C:\Users\Asus\Documents\Bs.c\Year3\Linux
+  175  cd C:/Users/Asus/Documents/Bs.c/Year3/Linux
+  176  cd /mnt/c/Users/Asus/Documents/Bs.c/Year3/Linux
+  177  mkdir GitAndGitHub
+  178  cd GitAndGitHub/
+  179  nano commit.sh
+  180  ls
+  181  sudo python3 install.py 
+  182  nmap
+  183  sudo apt install nmap
+  184  ifconfig
+  185  sudo apt install net-tools
+  186  ifconfig
+  187  sudo apt install xerosploit
+  188  cd C:\Users\Asus\Documents\Bs.c\Year3\Linux\Docker
+  189  cd Documents\Bs.c\Year3\Linux\Docker
+  190  cd /mnt/c/Users/Asus/Documents/Bs.c/Year3/Linux/Docker
+  191  docker --version
+  192  docker build -t temp-convertor-bash .
+  193  cd javaDockerApp/
+  194  docker build -t temp-convertor-bash .
+  195  docker images
+  196  docker run --rm temp-convertor-bash 27
+  197  cd ..
+  198  cd ./pythonDockerApp
+  199  cd pyDockerApp/
+  200  cd .
+  201  code .
+  202  docker images
+  203  docker run --rm temp-converor-pthon 23
+  204  docker run --rm temp-converor-pthon
+  205  docker run --rm temp-convertor-python
+  206  cd .
+  207  code .
+  208  python3 -m venv EnvPyApp
+  209  sudo apt update
+  210  hisorty | grep java.
+  211  history | grep java
+  212  docker --version
+  213  docker build -t temp-convertor-bash .
+  214  docker --version
+  215  cd /mnt/c/Users/Asus/Documents/Bs.c/Year3/Linux/Docker
+  216  docker --version
+  217  docker build -t temp-convertor-bash .
+  218  cd pyDockerApp/
+  219  docker build temperature_convertor.py
+  220  cd ..
+  221  cd javaDockerApp/
+  222  docker build -t temp-convertor-bash .
+  223  cd ..
+  224  cd pyDockerApp/
+  225  code .
+  226  docker images
+  227  cd ..
+  228  mkdir Q5
+  229  cd Q5/
+  230  git checkout -b BR_Q5
+  231  git branch
+  232  touch
+  233  touch --help
+  234  touch Dockerfile.python
+  235  docker build -f Dockerfile.python -t my_python_app .
+  236  docker build -t q5_app .
+  237  docker build -t q5_app -f DockerfileA.python
+  238  docker build -t q5_app -f Dockerfile.python .
+  239  docker build -t q5_app -f DockerfileA.python . 
+  240  nano --version
+  241  convert --version
+  242  docker build -t q5_app -f DockerfileA.python . 
+  243  convert --version
+  244  docker build -t q5_app -f DockerfileA.python . 
+  245  convert --version
+  246  docker build -t q5_app -f DockerfileA.python . 
+  247  magick --version
+  248  convert --version
+  249  docker run -it --name q5_container q5_app
+  250  docker build -t q5_app -f WORK/Q5/DockerfileA.python .
+  251  cd ..
+  252  [+] Building 0.0s (0/0)                                                                                                                         docker:default
+  253  docker build -t q5_app -f WORK/Q5/DockerfileA.python .
+  254  docker run -it --name q5_container q5_app
+  255  docker stop q5_container
+  256  docker rm q5_container
+  257  docker run -it --name q5_container q5_app
+  258  apt update && apt install -y nano
+  259  apt install -y nano
+  260  sudo apt update && sudo apt install -y nano
+  261  apt install -y nano
+  262  sudo apt update && sudo apt install -y nano
+  263  nano plant.py
+  264  cat plant.py 
+  265  python3 plant.py
+  266  pip3 install matplotlib
+  267  sudo apt update && sudo apt install -y python3-matplotlib
+  268  python3 plant.py
+  269  apt install -y imagemagick
+  270  sudo apt install -y imagemagick
+  271  convert *.png +append final_image.jpg
+  272  docker ps
+  273  docker run -it q5_image
+  274  docker run -it --name q5.1_container
+  275  docker run -it --name q5.1_container ubuntu:latest /bin/bash
+  276  docker build -t q5_image .
+  277  docker build -f DockerfileA.python -t q5_image .
+  278  docker run
+  279  docker run -it
+  280  docker run -it --name Q5.1_container ubuntu
+  281  cd C:\Users\Asus\Documents\Bs.c\Year3\Linux\Final_Project\LINUX_Course_Project\WORK\Q5
+  282  mkdir Q5.3
+  283  cd Q5.3/
+  284  touch Dockerfile
+  285  touch Watermark.java
+  286  touch watermark.sh
+  287  nano watermark.sh
+  288  chmod +x watermark.sh
+  289  docker build -t q5.3-runner .
+  290  mv ../plots .
+  291  docker run -it -v $(pwd):/app --entrypoint /bin/bash q5.3-runner
+  292  ./watermark.sh
+  293  history > history_5_3.txt
