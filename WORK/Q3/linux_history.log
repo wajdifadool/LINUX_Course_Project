@@ -1,0 +1,16 @@
+  797  ../
+  798  ls
+  799  ../
+  800  cd ./
+  801  ls
+  802  cd ../
+  803  ls
+  804  cd ../
+  805  ls
+  806  clr
+  807  la
+  808  clt
+  809  clr
+  810  git status
+  811  git add WORK/Q3
+  812  git status

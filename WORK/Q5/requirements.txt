@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 argparse
 argparse
 matplotlib
+=======
+ argparse
+ matplotlib
+
+>>>>>>> bfc038200297514f8642040a7960fbfa0c5c47b6

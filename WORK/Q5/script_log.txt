@@ -1,0 +1,107 @@
+Starting script execution...
+20250311_071744 CSV path ../../DATA/plants.csv
+20250311_071744 Output Dir Result
+checking for venv ...  
+vevn found in the cur dir.
+activiting venv
+Virtual environment is active.
+installing requirements.txt 
+Required packages installed successfully.
+Package             Version
+------------------- -----------
+contourpy           1.3.0
+cycler              0.12.1
+fonttools           4.56.0
+importlib_resources 6.5.2
+kiwisolver          1.4.7
+matplotlib          3.9.4
+numpy               2.0.2
+packaging           24.2
+pillow              11.1.0
+pip                 21.2.4
+pyparsing           3.2.1
+python-dateutil     2.9.0.post0
+setuptools          58.1.0
+six                 1.17.0
+zipp                3.21.0
+copy python script to the current dir
+----------------------python running ----------------------
+Plant: Rose
+Height data: [50, 55, 60, 65, 70] cm
+Leaf count data: [35, 40, 45, 50, 55]
+Dry weight data: [2.0, 2.2, 2.5, 2.7, 3.0] g
+Generated plots for Rose:
+Scatter plot saved as Rose_scatter.png
+Histogram saved as Rose_histogram.png
+Line plot saved as Rose_line_plot.png
+Python script executed successfully for Rose.
+----------------------python running ----------------------
+Plant: Tulip
+Height data: [30, 35, 40, 42] cm
+Leaf count data: [12, 15, 18, 20]
+Dry weight data: [1.5, 1.6, 1.7, 1.8] g
+Generated plots for Tulip:
+Scatter plot saved as Tulip_scatter.png
+Histogram saved as Tulip_histogram.png
+Line plot saved as Tulip_line_plot.png
+Python script executed successfully for Tulip.
+----------------------python running ----------------------
+Plant: Sunflower
+Height data: [120, 125, 130, 135] cm
+Leaf count data: [50, 55, 60, 65]
+Dry weight data: [5.0, 5.5, 6.0, 6.5] g
+Generated plots for Sunflower:
+Scatter plot saved as Sunflower_scatter.png
+Histogram saved as Sunflower_histogram.png
+Line plot saved as Sunflower_line_plot.png
+Python script executed successfully for Sunflower.
+----------------------python running ----------------------
+Plant: Daffodil
+Height data: [40, 45, 50, 55] cm
+Leaf count data: [15, 18, 20, 22]
+Dry weight data: [1.8, 2.0, 2.2, 2.5] g
+Generated plots for Daffodil:
+Scatter plot saved as Daffodil_scatter.png
+Histogram saved as Daffodil_histogram.png
+Line plot saved as Daffodil_line_plot.png
+Python script executed successfully for Daffodil.
+----------------------python running ----------------------
+Plant: Lily
+Height data: [60, 65, 70] cm
+Leaf count data: [20, 22, 24]
+Dry weight data: [2.5, 2.7, 3.0] g
+Generated plots for Lily:
+Scatter plot saved as Lily_scatter.png
+Histogram saved as Lily_histogram.png
+Line plot saved as Lily_line_plot.png
+Python script executed successfully for Lily.
+Script execution completed. , deactivating
+Rmeove python script from the current dir
+.
+├── Result
+│   ├── Daffodil
+│   │   ├── Daffodil_histogram.png
+│   │   ├── Daffodil_line_plot.png
+│   │   └── Daffodil_scatter.png
+│   ├── Lily
+│   │   ├── Lily_histogram.png
+│   │   ├── Lily_line_plot.png
+│   │   └── Lily_scatter.png
+│   ├── Rose
+│   │   ├── Rose_histogram.png
+│   │   ├── Rose_line_plot.png
+│   │   └── Rose_scatter.png
+│   ├── Sunflower
+│   │   ├── Sunflower_histogram.png
+│   │   ├── Sunflower_line_plot.png
+│   │   └── Sunflower_scatter.png
+│   └── Tulip
+│       ├── Tulip_histogram.png
+│       ├── Tulip_line_plot.png
+│       └── Tulip_scatter.png
+├── error_log.txt
+├── requirements.txt
+├── script_log.txt
+└── script_v2.sh
+
+7 directories, 19 files
